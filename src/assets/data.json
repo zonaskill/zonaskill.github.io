@@ -170,7 +170,7 @@
   {
     "asset_id": "5dac5e28-ad13-31ea-869f-41770dfcee09",
     "chain_id": "6cfe566e-4aad-470b-8c9a-2fd35b49c68d",
-    "symbol": "USDT(Omni)",
+    "symbol": "USDT(EOS)",
     "name": "USDT",
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
     "destination": "eoswithmixin",
