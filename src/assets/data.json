@@ -19,6 +19,7 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0x0000000000000000000000000000000000000000",
+    "decimals": 18,
     "amount": "0.001"
   },
   {
@@ -140,6 +141,7 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+    "decimals": 18,
     "amount": "0.1"
   },
   {
@@ -162,6 +164,7 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "decimals": 6,
     "amount": "1"
   },
   {
@@ -182,7 +185,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/w3Lb-pMrgcmmrzamf7FG_0c6Dkh3w_NRbysqzpuacwdVhMYSOtnX2zedWqiSG7JuZ3jd4xfhAJduQXY1rPidmywn=s128",
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
-    "asset_key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    "asset_key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "decimals": 6
   },
   {
     "asset_id": "b91e18ff-a9ae-3dc7-8679-e935d9a4b34b",
@@ -222,7 +226,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/8rMphHGuCQljXYyAWL8TLX-01eoqUy3WJgf539UsM88P69E7rT8FIMClaHkAgvo-7flQRIudlJE9KzbA9WBsPZFq6T_9BvyL93o=s128",
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
-    "asset_key": "0xdd6b2e978ac26cab895d1bb21e60aa7b526350e0"
+    "asset_key": "0xdd6b2e978ac26cab895d1bb21e60aa7b526350e0",
+    "decimals": 8
   },
   {
     "asset_id": "25dabac5-056a-48ff-b9f9-f67395dc407c",
@@ -262,7 +267,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/fgSEd6CY07BiZP76--7JA9P-rKIWRoXD8Eis8RUL6mP85_QPsbMoyJtWJ6MjE9jWFEjabNF0AKb8i2QOfdbCS6BJMntySps-8GfvJQ=s128",
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
-    "asset_key": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce"
+    "asset_key": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+    "decimals": 18
   },
   {
     "asset_id": "47b13785-25e2-3c5c-ac6b-3713e9c31c22",
@@ -312,7 +318,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/HMXlpSt6KF9i-jp_ZQix9wFcMD27DrYox5kDrju6KkjvlQjQPZ2zimKKFYBJwecRTw5YAaMt4fpHXd1W0mwIxQ=s128",
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
-    "asset_key": "0x9e6d2d6c76d97feb729d2d71dc541358565d1947"
+    "asset_key": "0x9e6d2d6c76d97feb729d2d71dc541358565d1947",
+    "decimals": 18
   },
   {
     "asset_id": "477bd072-ea5a-3e0a-98dd-b3a4ed630acc",
