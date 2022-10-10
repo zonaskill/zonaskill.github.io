@@ -5,12 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "element-ui": "^2.15.10",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-qriously": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -24,6 +26,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "prettier": "^2.4.1",
+    "push-dir": "^0.4.1",
     "stylus": "^0.55.0",
     "stylus-loader": "^6.1.0",
     "vue-template-compiler": "^2.6.14"
