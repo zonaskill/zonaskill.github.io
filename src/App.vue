@@ -4,9 +4,9 @@
       <h1>Payment link generator</h1>
 
       <el-row :gutter="10">
-        <el-col>
-          <el-dropdown @command="handleCommand">
-            <div class="dropdown-toggler">
+        <el-col :xs="24" :md="24" :lg="12">
+          <div class="dropdown">
+            <div class="dropdown-toggler" @click="onAssetPickerChange">
               <div class="dropdown-toggler-container" v-if="!currentAsset">Select</div>
               <div class="dropdown-toggler-container" v-else>
                 <img :src="currentAsset.icon_url" :alt="currentAsset.symbol" />
@@ -15,15 +15,15 @@
               <i class="el-icon-arrow-down el-icon--right"></i>
             </div>
 
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item v-for="item in assets" :key="item.asset_id" :command="item.asset_id">
-                <div class="dropdonw-item-container">
+            <div class="dropdown-menu" v-show="isAssetPickerShow">
+              <div class="dropdown-menu-container">
+                <div class="dropdown-item" v-for="item in assets" :key="item.asset_id" :command="item.asset_id" @click="onAssetChoose(item)">
                   <img :src="item.icon_url" :alt="item.symbol" />
                   <span>{{ item.symbol }}</span>
                 </div>
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown>
+              </div>
+            </div>
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -37,9 +37,11 @@ export default {
   components: {},
   data() {
     return {
-      assets: assets,
+      assets: assets.sort((itemA, itemB) => Number(itemB.price_usd) - Number(itemA.price_usd)),
 
-      assetId: '',
+      assetId: 'fd11b6e3-0b87-41f1-a41f-f0e9b49e5bf0',
+
+      isAssetPickerShow: false,
     };
   },
   computed: {
@@ -47,11 +49,13 @@ export default {
       return this.assets.find(item => item.asset_id === this.assetId);
     },
   },
-  mounted() {
-  },
   methods: {
-    handleCommand(command) {
-      this.assetId = command;
+    onAssetPickerChange() {
+      this.isAssetPickerShow = !this.isAssetPickerShow;
+    },
+    onAssetChoose(item) {
+      this.assetId = item.asset_id;
+      this.isAssetPickerShow = false;
     },
   },
 };
@@ -88,5 +92,60 @@ body {
 
 #app {
   margin-top: 60px;
+}
+
+.dropdown {
+  position: relative;
+
+  .dropdown-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #DCDFE6;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+
+  .dropdown-toggler-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    background: #fff;
+
+    .dropdown-menu-container {
+      max-height: 300px;
+      overflow: hidden scroll;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 16px;
+
+      img {
+        margin-right: 8px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
 }
 </style>
