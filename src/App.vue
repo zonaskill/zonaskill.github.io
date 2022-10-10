@@ -105,7 +105,7 @@ export default {
       paymentMethods: [
         {
           icon: require('./assets/general-scheme.png'),
-          name: 'General Scheme',
+          name: 'Scan to pay',
           value: 'scheme',
         },
         {
@@ -140,6 +140,7 @@ export default {
   },
   methods: {
     onAssetPickerChange() {
+      this.isPaymentMethodPickerShow = false;
       this.isAssetPickerShow = !this.isAssetPickerShow;
     },
     onAssetChoose(item) {
@@ -148,6 +149,7 @@ export default {
     },
 
     onPaymentMethodsPickerChange() {
+      this.isAssetPickerShow = false;
       this.isPaymentMethodPickerShow = !this.isPaymentMethodPickerShow;
     },
     onPaymentMethodChoose(item) {
@@ -205,7 +207,7 @@ export default {
           this.qrcodeValue = `https://metamask.app.link/send/${destination}?value=${amount || 1}e18`;
           return;
         }
-        this.qrcodeValue = `https://metamask.app.link/send/${asset_key}/transfer?address=${destination}&unit256=${amount || 1}e${decimals || 18}`;
+        this.qrcodeValue = `https://metamask.app.link/send/${asset_key}/transfer?address=${destination}&uint256=${amount || 1}e${decimals || 18}`;
         return;
       }
     },
@@ -236,6 +238,7 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
