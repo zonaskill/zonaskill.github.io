@@ -188,6 +188,15 @@ export default {
           return;
         }
 
+        // if (prefix === 'ethereum') {
+        //   if (asset_id === '43d61dcd-e413-450d-80b8-101d5e903357') {
+        //     this.qrcodeValue = `${prefix}:${destination}?value=${amount}`;
+        //   } else {
+        //     this.qrcodeValue = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}`;
+        //   }
+        //   return;
+        // }
+
         this.qrcodeValue = `${prefix}:${destination}?amount=${
           amount || 1
         }&asset=${asset_id}&recipient=3539c3ce-52c0-4b0b-9573-c035ecb98d48&memo=${encodeURIComponent(tag)}`;
