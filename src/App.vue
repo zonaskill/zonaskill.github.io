@@ -163,7 +163,7 @@ export default {
       const { currentAsset, paymentMethod } = this;
       if (paymentMethod === 'scheme') {
         const schemeMap = {
-          'c6d0c728-2624-429b-8e0d-d9d19b6592fa': 'bitcoin',
+          'c6d0c728-2624-429b-8e0d-d9d19b6592fa': 'bitcoin', // https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
           '43d61dcd-e413-450d-80b8-101d5e903357': 'ethereum',
           '17f78d7c-ed96-40ff-980c-5dc62fecbc85': 'binancecoin',
           'eea900a8-b327-488c-8d8d-1428702fe240': 'mobilecoin',
@@ -178,7 +178,7 @@ export default {
           '56e63c06-b506-4ec5-885a-4a5ac17b83c1': 'stellar',
           '6770a1e5-6086-44d5-b60f-545f9d9e8ffd': 'dogecoin',
         };
-        const { asset_id, chain_id, amount, destination, tag } = currentAsset;
+        const { asset_id, chain_id, amount, destination, tag, asset_key, decimals } = currentAsset;
         const prefix = schemeMap[chain_id];
         if (!prefix) {
           this.$message({
@@ -188,14 +188,14 @@ export default {
           return;
         }
 
-        // if (prefix === 'ethereum') {
-        //   if (asset_id === '43d61dcd-e413-450d-80b8-101d5e903357') {
-        //     this.qrcodeValue = `${prefix}:${destination}?value=${amount}`;
-        //   } else {
-        //     this.qrcodeValue = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}`;
-        //   }
-        //   return;
-        // }
+        if (prefix === 'ethereum') {
+          if (asset_id === '43d61dcd-e413-450d-80b8-101d5e903357') {
+            this.qrcodeValue = `${prefix}:${destination}?amount=${amount}`;
+          } else {
+            this.qrcodeValue = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}&amount=${amount}`;
+          }
+          return;
+        }
 
         this.qrcodeValue = `${prefix}:${destination}?amount=${
           amount || 1

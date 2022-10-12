@@ -42,6 +42,7 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0xa974c709cfb4566686553a20790685a47aceaa33",
+    "decimals": 18,
     "amount": "0.01"
   },
   {
