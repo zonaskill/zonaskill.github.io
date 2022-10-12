@@ -176,7 +176,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
     "destination": "eoswithmixin",
     "tag": "a5a21611d5e6632c2e33f6314282f824",
-    "asset_key": "tethertether:USDT"
+    "asset_key": "tethertether:USDT",
+    "amount": "1"
   },
   {
     "asset_id": "9b180ab6-6abe-3dc0-a13f-04169eb34bfa",
@@ -187,7 +188,8 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "decimals": 6
+    "decimals": 6,
+    "amount": "1"
   },
   {
     "asset_id": "b91e18ff-a9ae-3dc7-8679-e935d9a4b34b",
@@ -197,7 +199,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
     "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
     "tag": "",
-    "asset_key": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    "asset_key": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "amount": "1"
   },
   {
     "asset_id": "eea900a8-b327-488c-8d8d-1428702fe240",
@@ -207,7 +210,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/eckqDQi50ZUCoye5mR7y6BvlbXX6CBzkP89BfGNNH6TMNuyXYcCUd7knuIDpV_0W7nT1q3Oo9ooVnMDGjl8-oiENuA5UVREheUu2=s128",
     "destination": "2zceHyDqG2S7DPXZTpBbLHLGRKHmb2H3obhbDAfaxSW1Gc4yjJC3BZeaMZdTDmjjjtDwuRmxb5eGZ3irmbuP61Vg3qqQgRWi9wds122rBtF",
     "tag": "",
-    "asset_key": "eea900a8-b327-488c-8d8d-1428702fe240"
+    "asset_key": "eea900a8-b327-488c-8d8d-1428702fe240",
+    "amount": "1"
   },
   {
     "asset_id": "23dfb5a5-5d7b-48b6-905f-3970e3176e27",
@@ -217,7 +221,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/SyX2tH2mBbSc45IfkOysbbd8WtPEjla5R3xT9ym0tbKv_vAyzl_Jd5qEYsOhKyuFRv09w3uB4Vzs2XJuJzZeO7e_=s128",
     "destination": "rGb2zanx3n3A2GH6bzY5pxhnUzkfb4AMtc",
     "tag": "",
-    "asset_key": "23dfb5a5-5d7b-48b6-905f-3970e3176e27"
+    "asset_key": "23dfb5a5-5d7b-48b6-905f-3970e3176e27",
+    "amount": "1"
   },
   {
     "asset_id": "b5289c48-ec3a-3cdb-b2c4-0913d1812cd5",
@@ -228,7 +233,8 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0xdd6b2e978ac26cab895d1bb21e60aa7b526350e0",
-    "decimals": 8
+    "decimals": 8,
+    "amount": "1"
   },
   {
     "asset_id": "25dabac5-056a-48ff-b9f9-f67395dc407c",
@@ -238,7 +244,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/SXfRh0WJZpHrDAbBItuwwLp_TPML7hrbAPHGIz_EQRga0fFm5yGtNd55_W0ZZv9HRj_6W6kE4O4tq8W78mutAPE=s128",
     "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
     "tag": "",
-    "asset_key": "25dabac5-056a-48ff-b9f9-f67395dc407c"
+    "asset_key": "25dabac5-056a-48ff-b9f9-f67395dc407c",
+    "amount": "1"
   },
   {
     "asset_id": "6770a1e5-6086-44d5-b60f-545f9d9e8ffd",
@@ -248,7 +255,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/gtz8ocdxuC4N2rgEDKGc4Q6sZzWWCIGDWYBT6mHmtRubLqpE-xafvlABX6cvZ74VXL4HjyIocnX-H_Vxrz3En9tMcIKED0c-2MhH=s128",
     "destination": "DDkWdo1eKWzGjWN32t7ZUsL6o89RWRMG89",
     "tag": "",
-    "asset_key": "6770a1e5-6086-44d5-b60f-545f9d9e8ffd"
+    "asset_key": "6770a1e5-6086-44d5-b60f-545f9d9e8ffd",
+    "amount": "1"
   },
   {
     "asset_id": "d243386e-6d84-42e6-be03-175be17bf275",
@@ -258,7 +266,8 @@
     "icon_url": "https://mixin-images.zeromesh.net/0jykqkeqXVw16MXjMxcpA-7kd0Lo55jjqoKxXgq-WdI2ln4kaDnFUB6IqfktpX_x1wXxtow5MHkCNuH8f7PFBg=s128",
     "destination": "ckb1qyqxaeq5pf7mc58tvncd5pnwqslszs7080rsfl05j5",
     "tag": "",
-    "asset_key": "d243386e-6d84-42e6-be03-175be17bf275"
+    "asset_key": "d243386e-6d84-42e6-be03-175be17bf275",
+    "amount": "1"
   },
   {
     "asset_id": "dcde18b9-f015-326f-b8b1-5b820a060e44",
@@ -269,7 +278,8 @@
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
     "asset_key": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
-    "decimals": 18
+    "decimals": 18,
+    "amount": "1"
   },
   {
     "asset_id": "47b13785-25e2-3c5c-ac6b-3713e9c31c22",
@@ -279,6 +289,7 @@
     "icon_url": "https://mixin-images.zeromesh.net/fJHXu7Y_a7NNk2Dl3MPwrB4SS8qxZXT9M-lMSv49nzRqIwlfxGD1F46hLE6qP1H_Xy3rYAnc0sHMO6c8XAbIYe0=s128",
     "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
     "tag": "",
-    "asset_key": "1002000"
+    "asset_key": "1002000",
+    "amount": "1"
   }
 ]

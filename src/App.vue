@@ -138,6 +138,7 @@ export default {
       return obj;
     },
   },
+
   methods: {
     onAssetPickerChange() {
       this.isPaymentMethodPickerShow = false;
@@ -186,6 +187,10 @@ export default {
             type: 'error',
           });
           return;
+        }
+
+        if (prefix === 'bitcoin') {
+          return this.qrcodeValue = `bitcoin:${destination}?amount=${amount}`;
         }
 
         if (prefix === 'ethereum') {
