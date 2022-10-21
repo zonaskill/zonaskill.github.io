@@ -52,7 +52,7 @@ export const callMetaMask = asset => {
   const { asset_id, chain_id, asset_key, amount, destination, decimals } = asset;
   let error = null;
   let value = null;
-  if (chain_id !== ETH_UUID) {
+  if (chain_id === ETH_UUID) {
     if (asset_id === ETH_UUID) {
       value = `https://metamask.app.link/send/${destination}?value=${amount}e18`;
     } else {

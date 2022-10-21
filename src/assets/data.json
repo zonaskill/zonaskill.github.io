@@ -18,7 +18,7 @@
     "icon_url": "https://mixin-images.zeromesh.net/zVDjOxNTQvVsA8h2B4ZVxuHoCF3DJszufYKWpd9duXUSbSapoZadC7_13cnWBqg0EmwmRcKGbJaUpA8wFfpgZA=s128",
     "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
     "tag": "",
-    "asset_key": "0x0000000000000000000000000000000000000000",
+    "asset_key": "",
     "decimals": 18,
     "amount": "0.001"
   },
