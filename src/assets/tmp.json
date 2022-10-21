@@ -6,7 +6,7 @@
     "symbol": "BTC",
     "name": "Bitcoin",
     "icon_url": "https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
-    "balance": "0.05022568",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "19eG42LQbfTh8hZC6UipfHAH5xJtLMV5Wx",
@@ -39,7 +39,7 @@
     "symbol": "ETH",
     "name": "Ether",
     "icon_url": "https://mixin-images.zeromesh.net/zVDjOxNTQvVsA8h2B4ZVxuHoCF3DJszufYKWpd9duXUSbSapoZadC7_13cnWBqg0EmwmRcKGbJaUpA8wFfpgZA=s128",
-    "balance": "0.7324373",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -67,7 +67,7 @@
     "symbol": "BNB",
     "name": "Binance Chain Native Token",
     "icon_url": "https://mixin-images.zeromesh.net/HCjLu6VM0XA7ouRcZJGDTOzE7zoXaA8LgESw075VW5teZ27AGUgyGrc4jnzuK5LtgT5HJQDSNSOImnU3IcUsBLoF=s128",
-    "balance": "0.03",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "bnb14psyjrpx75520adjh9kxazyxzpwduggjy2alxy",
@@ -95,7 +95,7 @@
     "symbol": "XIN",
     "name": "Mixin",
     "icon_url": "https://mixin-images.zeromesh.net/UasWtBZO0TZyLTLCFQjvE_UYekjC7eHCuT_9_52ZpzmCC-X-NPioVegng7Hfx0XmIUavZgz5UL-HIgPCBECc-Ws=s128",
-    "balance": "0.18198914",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -123,7 +123,7 @@
     "symbol": "BCH",
     "name": "Bitcoin Cash",
     "icon_url": "https://mixin-images.zeromesh.net/tqt14x8iwkiCR_vIKIw6gAAVO8XpZH7ku7ZJYB5ArMRA6grN9M1oCI7kKt2QqBODJwr17sZxDCDTjXHOgIixzv6X=s128",
-    "balance": "0.03",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "17xyFiWF2mqTF1mDAo9YxNWnXNZtVdcT2s",
@@ -151,7 +151,7 @@
     "symbol": "ZEC",
     "name": "Zcash",
     "icon_url": "https://mixin-images.zeromesh.net/9QWOYgcD0H7q1cH6PaSM08FQ549epnEzqIQ2EgEfK2s82jhsIu1wDKmsR7rkPFwjIYKOILteq7mW1hIaXcy4DhI=s128",
-    "balance": "0.1",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "t1c1ayYu9Yp1PxGTLyYLjF7kJP8CZs9BfuZ",
@@ -179,7 +179,7 @@
     "symbol": "LTC",
     "name": "Litecoin",
     "icon_url": "https://mixin-images.zeromesh.net/dLK5T9I4YFA094o6nn-qZ_TWLUtIrL0xtjxOyURaLoPcl94m0JKQhXQiOrC775LS9d8apDfLXVfbpDzGmWDf0CWJ=s128",
-    "balance": "11.05941147",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "LNdHAjQyYGvf2r2HeVWzbKXHkuim5P9eDb",
@@ -207,7 +207,7 @@
     "symbol": "DASH",
     "name": "Dash",
     "icon_url": "https://mixin-images.zeromesh.net/UEGZCbh_zPbCrah2vhzNBATOBi_7XhgZLKNDe8U49ZxIEAtUC0SO-nvG0QnOMOBM0XrGv5Z5FskxhNfZVYMaGQjqcvUrzzB6JBkc=s128",
-    "balance": "0.11",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "XjxcYVoxgUPMrh9TZkYavQEKUEoe4smZ5M",
@@ -235,7 +235,7 @@
     "symbol": "SOL",
     "name": "Solana",
     "icon_url": "https://mixin-images.zeromesh.net/eTzm8_cWke8NqJ3zbQcx7RkvbcTytD_NgBpdwIAgKJRpOoo0S0AQ3IQ-YeBJgUKmpsMPUHcZFzfuWowv3801cF5HXfya5MQ9fTA9HQ=s128",
-    "balance": "0.1",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "2iK6H4jGcSdKTyufmXiDj6gBtVSxMGvCHww1enK4PjN7",
@@ -263,7 +263,7 @@
     "symbol": "ETC",
     "name": "Ether Classic",
     "icon_url": "https://mixin-images.zeromesh.net/fM9wgyNyB3Uiopx2FRFxhr-sYrvXZtJ-uCpk975wGdpoehoA59rIU-BQ4s_6YFMDEthQ74KCPysOIWSFK4vUG_Y=s128",
-    "balance": "0.37",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x32c71074Be0ca17CB9C01bF8de851340256B4022",
@@ -291,7 +291,7 @@
     "symbol": "ZEN",
     "name": "Horizen",
     "icon_url": "https://mixin-images.zeromesh.net/CFQzgS3lZztswzt8mKVWAOWAJDhlQQw2gQZN4_-2bRAzRivObDq-KOdjGIv_vcY6FGJLFlFxN4vSrFb7t0uxsQ=s128",
-    "balance": "1.37279965",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "znjGtwa2WnE9hMobZCWHtSVUH9adtz8Dwoc",
@@ -319,7 +319,7 @@
     "symbol": "AR",
     "name": "Arweave",
     "icon_url": "https://mixin-images.zeromesh.net/MDStWtCYDjGvGeEZp70xJduXK2cAEkQD9HkY-qi7m7yM4OOjjQqr3dVDcmvo55QBz96FqgygDj4aAz7leP5fISk=s128",
-    "balance": "0.35300729",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "hA1gSgFkdnD4HqUcPTWrG6V1lXFRPtBV2gQzA0fkW4w",
@@ -347,7 +347,7 @@
     "symbol": "UNI",
     "name": "Uniswap",
     "icon_url": "https://mixin-images.zeromesh.net/Ekf9UzoHhRRfcDLchjfVrRPYZ_71jQt306WcvgwZWwEM2BIGlHcUm_sK3Nw_mjARPwIvNB9xAzAEWJyW86pVuarPu8O5YZ0WwqTo=s128",
-    "balance": "1",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -375,7 +375,7 @@
     "symbol": "EOS",
     "name": "EOS",
     "icon_url": "https://mixin-images.zeromesh.net/OTwqLjEwc6v0JutJc-1sYkh_juFOvVbFz26WvvwfLGdKq6ZtwAT-wKhX0k-5PsgOK_Pd9rCQjZfwMJmiNXCBzpHnjapBtkCqAVCTCg=s128",
-    "balance": "23.43992804",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "eoswithmixin",
@@ -403,7 +403,7 @@
     "symbol": "USDT",
     "name": "Tether USD",
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
-    "balance": "1467.17424491",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -431,7 +431,7 @@
     "symbol": "USDT",
     "name": "USDT",
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
-    "balance": "10",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "eoswithmixin",
@@ -459,7 +459,7 @@
     "symbol": "USDC",
     "name": "USD//C",
     "icon_url": "https://mixin-images.zeromesh.net/w3Lb-pMrgcmmrzamf7FG_0c6Dkh3w_NRbysqzpuacwdVhMYSOtnX2zedWqiSG7JuZ3jd4xfhAJduQXY1rPidmywn=s128",
-    "balance": "2253.92829605",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -487,7 +487,7 @@
     "symbol": "USDT",
     "name": "Tether USD",
     "icon_url": "https://mixin-images.zeromesh.net/ndNBEpObYs7450U08oAOMnSEPzN66SL8Mh-f2pPWBDeWaKbXTPUIdrZph7yj8Z93Rl8uZ16m7Qjz-E-9JFKSsJ-F=s128",
-    "balance": "611.43767159",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -515,7 +515,7 @@
     "symbol": "MOB",
     "name": "MobileCoin",
     "icon_url": "https://mixin-images.zeromesh.net/eckqDQi50ZUCoye5mR7y6BvlbXX6CBzkP89BfGNNH6TMNuyXYcCUd7knuIDpV_0W7nT1q3Oo9ooVnMDGjl8-oiENuA5UVREheUu2=s128",
-    "balance": "0.0214154",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "2zceHyDqG2S7DPXZTpBbLHLGRKHmb2H3obhbDAfaxSW1Gc4yjJC3BZeaMZdTDmjjjtDwuRmxb5eGZ3irmbuP61Vg3qqQgRWi9wds122rBtF",
@@ -543,7 +543,7 @@
     "symbol": "XRP",
     "name": "Ripple",
     "icon_url": "https://mixin-images.zeromesh.net/SyX2tH2mBbSc45IfkOysbbd8WtPEjla5R3xT9ym0tbKv_vAyzl_Jd5qEYsOhKyuFRv09w3uB4Vzs2XJuJzZeO7e_=s128",
-    "balance": "82",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "rGb2zanx3n3A2GH6bzY5pxhnUzkfb4AMtc",
@@ -571,7 +571,7 @@
     "symbol": "mAED",
     "name": "Meta AED",
     "icon_url": "https://mixin-images.zeromesh.net/8rMphHGuCQljXYyAWL8TLX-01eoqUy3WJgf539UsM88P69E7rT8FIMClaHkAgvo-7flQRIudlJE9KzbA9WBsPZFq6T_9BvyL93o=s128",
-    "balance": "7055.38748813",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -599,7 +599,7 @@
     "symbol": "TRX",
     "name": "TRON",
     "icon_url": "https://mixin-images.zeromesh.net/SXfRh0WJZpHrDAbBItuwwLp_TPML7hrbAPHGIz_EQRga0fFm5yGtNd55_W0ZZv9HRj_6W6kE4O4tq8W78mutAPE=s128",
-    "balance": "946.08705921",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -627,7 +627,7 @@
     "symbol": "DOGE",
     "name": "Dogecoin",
     "icon_url": "https://mixin-images.zeromesh.net/gtz8ocdxuC4N2rgEDKGc4Q6sZzWWCIGDWYBT6mHmtRubLqpE-xafvlABX6cvZ74VXL4HjyIocnX-H_Vxrz3En9tMcIKED0c-2MhH=s128",
-    "balance": "10082.40046986",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "DDkWdo1eKWzGjWN32t7ZUsL6o89RWRMG89",
@@ -655,7 +655,7 @@
     "symbol": "CKB",
     "name": "Nervos CKByte",
     "icon_url": "https://mixin-images.zeromesh.net/0jykqkeqXVw16MXjMxcpA-7kd0Lo55jjqoKxXgq-WdI2ln4kaDnFUB6IqfktpX_x1wXxtow5MHkCNuH8f7PFBg=s128",
-    "balance": "3489",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "ckb1qyqxaeq5pf7mc58tvncd5pnwqslszs7080rsfl05j5",
@@ -683,7 +683,7 @@
     "symbol": "SHIB",
     "name": "SHIBA INU",
     "icon_url": "https://mixin-images.zeromesh.net/fgSEd6CY07BiZP76--7JA9P-rKIWRoXD8Eis8RUL6mP85_QPsbMoyJtWJ6MjE9jWFEjabNF0AKb8i2QOfdbCS6BJMntySps-8GfvJQ=s128",
-    "balance": "50580210.95023071",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -711,7 +711,7 @@
     "symbol": "BTT",
     "name": "BitTorrent",
     "icon_url": "https://mixin-images.zeromesh.net/fJHXu7Y_a7NNk2Dl3MPwrB4SS8qxZXT9M-lMSv49nzRqIwlfxGD1F46hLE6qP1H_Xy3rYAnc0sHMO6c8XAbIYe0=s128",
-    "balance": "0.001776",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -739,7 +739,7 @@
     "symbol": "USDT",
     "name": "Tether USDz",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "148.81",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -767,7 +767,7 @@
     "symbol": "CC",
     "name": "Cupcake",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "1740",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -795,7 +795,7 @@
     "symbol": "CHOC",
     "name": "Chocolate",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "5174",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -823,7 +823,7 @@
     "symbol": "EPC",
     "name": "ExinOne Point Card",
     "icon_url": "https://mixin-images.zeromesh.net/HMXlpSt6KF9i-jp_ZQix9wFcMD27DrYox5kDrju6KkjvlQjQPZ2zimKKFYBJwecRTw5YAaMt4fpHXd1W0mwIxQ=s128",
-    "balance": "19883.00000157",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "0x354155B1F573250401CE6e493B4C52fC163512dA",
@@ -851,7 +851,7 @@
     "symbol": "KTY",
     "name": "KRAFTLY",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "0.01",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -879,7 +879,7 @@
     "symbol": "USTD",
     "name": "USTD",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "150.38",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -907,7 +907,7 @@
     "symbol": "USDT",
     "name": "Tether USD",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "3901",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -935,7 +935,7 @@
     "symbol": "USTD",
     "name": "USTD",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "446.43",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -963,7 +963,7 @@
     "symbol": "𝖴𝖲𝖣𝖳",
     "name": "Teter 𝖴𝖲𝖣",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "1482",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -991,7 +991,7 @@
     "symbol": "GC",
     "name": "GroceriesCoin",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "1176",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -1019,7 +1019,7 @@
     "symbol": "USTD",
     "name": "USTD",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "301.2012",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -1047,7 +1047,7 @@
     "symbol": "𝖴𝖲𝖣𝖳",
     "name": "Tather 𝖴𝖲𝖣",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "451.6714",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -1075,7 +1075,7 @@
     "symbol": "TTC",
     "name": "TRXTwitterClassic",
     "icon_url": "https://images.mixin.one/yH_I5b0GiV2zDmvrXRyr3bK5xusjfy5q7FX3lw3mM2Ryx4Dfuj6Xcw8SHNRnDKm7ZVE3_LvpKlLdcLrlFQUBhds=s128",
-    "balance": "3330",
+    "balance": "0",
     "deposit_entries": [
       {
         "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
@@ -1093,6 +1093,29 @@
     "mixin_id": "",
     "reserve": "0",
     "confirmations": 20,
+    "capitalization": 0,
+    "liquidity": "0"
+  },
+  {
+    "type": "asset",
+    "asset_id": "64692c23-8971-4cf4-84a7-4dd1271dd887",
+    "chain_id": "64692c23-8971-4cf4-84a7-4dd1271dd887",
+    "fee_asset_id": "64692c23-8971-4cf4-84a7-4dd1271dd887",
+    "symbol": "SOL",
+    "name": "Solana",
+    "icon_url": "https://mixin-images.zeromesh.net/eTzm8_cWke8NqJ3zbQcx7RkvbcTytD_NgBpdwIAgKJRpOoo0S0AQ3IQ-YeBJgUKmpsMPUHcZFzfuWowv3801cF5HXfya5MQ9fTA9HQ=s128",
+    "balance": "0",
+    "deposit_entries": [[{ "destination": "2iK6H4jGcSdKTyufmXiDj6gBtVSxMGvCHww1enK4PjN7", "tag": "", "properties": null }]],
+    "destination": "2iK6H4jGcSdKTyufmXiDj6gBtVSxMGvCHww1enK4PjN7",
+    "tag": "",
+    "price_btc": "0.00146765",
+    "price_usd": "27.94",
+    "change_btc": "-0.03921940873026264",
+    "change_usd": "-0.04543901605739665",
+    "asset_key": "11111111111111111111111111111111",
+    "mixin_id": "481360491383ebd4f0f97543f3440313b48b8fd06dcfa5a0c2cabe4252d3a8eb",
+    "reserve": "0",
+    "confirmations": 512,
     "capitalization": 0,
     "liquidity": "0"
   }

@@ -10,7 +10,7 @@
               <div class="dropdown-toggler-container" v-if="!currentAsset">Select</div>
               <div class="dropdown-toggler-container" v-else>
                 <img :src="currentAsset.icon_url" :alt="currentAsset.symbol" />
-                <span>{{ currentAsset.symbol }}</span>
+                <span>{{ currentAsset.amount }} {{ currentAsset.symbol }}</span>
               </div>
               <i class="el-icon-arrow-down el-icon--right"></i>
             </div>
@@ -19,7 +19,7 @@
               <div class="dropdown-menu-container">
                 <div class="dropdown-item" v-for="item in assets" :key="item.asset_id" @click="onAssetChoose(item)">
                   <img :src="item.icon_url" :alt="item.symbol" />
-                  <span>{{ item.symbol }}</span>
+                  <span>{{ item.amount }} {{ item.symbol }}</span>
                 </div>
               </div>
             </div>
@@ -69,30 +69,8 @@
 <script>
 import assets from './assets/data.json';
 import { getParser } from 'bowser';
-
-function copy(str) {
-  const hiddenInput = document.createElement('input');
-  hiddenInput.setAttribute('style', 'visibility: inherit;height: 1px;z-index: -1000;position: absolute;top: 0;');
-  hiddenInput.setAttribute('class', 'needsclick');
-  hiddenInput.contentEditable = true;
-  hiddenInput.value = str;
-  document.body.appendChild(hiddenInput);
-  if (hiddenInput.select) {
-    hiddenInput.select();
-  }
-  if (hiddenInput.setSelectionRange) {
-    hiddenInput.setSelectionRange(0, hiddenInput.value.length);
-  }
-  const result = document.execCommand('copy');
-  hiddenInput.remove();
-
-  if (!result) {
-    prompt('请手动复制以下内容', str); // eslint-disable-line no-alert
-    return false;
-  }
-
-  return true;
-}
+import copy from './assets/copy-text';
+import { callScheme, callMetaMask, callMixin, callTokenPocket } from './assets/call-app';
 
 export default {
   name: 'App',
@@ -112,6 +90,16 @@ export default {
           icon: 'https://metamask.io/icons/icon-48x48.png',
           name: 'MetaMask',
           value: 'metamask',
+        },
+        {
+          icon: 'https://tokenpocket.pro/favicon.png',
+          name: 'Token Pocket',
+          value: 'tokenpocket',
+        },
+        {
+          icon: 'https://mixin.one/assets/icons/favicon.ico',
+          name: 'Mixin Messenger',
+          value: 'mixin',
         },
       ],
       paymentMethod: 'scheme',
@@ -158,72 +146,34 @@ export default {
       this.isPaymentMethodPickerShow = false;
     },
 
-    copyURL() {},
-
     onURLGenerate() {
       const { currentAsset, paymentMethod } = this;
-      if (paymentMethod === 'scheme') {
-        const schemeMap = {
-          'c6d0c728-2624-429b-8e0d-d9d19b6592fa': 'bitcoin', // https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
-          '43d61dcd-e413-450d-80b8-101d5e903357': 'ethereum',
-          '17f78d7c-ed96-40ff-980c-5dc62fecbc85': 'binancecoin',
-          'eea900a8-b327-488c-8d8d-1428702fe240': 'mobilecoin',
-          '05c5ac01-31f9-4a69-aa8a-ab796de1d041': 'monero',
-          'fd11b6e3-0b87-41f1-a41f-f0e9b49e5bf0': 'bitcoincash',
-          '574388fd-b93f-4034-a682-01c2bc095d17': 'bitcoinsv',
-          '76c802a2-7c88-447f-a93e-c29c9e5dd9c8': 'litecoin',
-          '6472e7e3-75fd-48b6-b1dc-28d294ee1476': 'dash',
-          '23dfb5a5-5d7b-48b6-905f-3970e3176e27': 'ripple',
-          'c996abc9-d94e-4494-b1cf-2a3fd3ac5714': 'zcash',
-          'a2c5d22b-62a2-4c13-b3f0-013290dbac60': 'horizen',
-          '56e63c06-b506-4ec5-885a-4a5ac17b83c1': 'stellar',
-          '6770a1e5-6086-44d5-b60f-545f9d9e8ffd': 'dogecoin',
-        };
-        const { asset_id, chain_id, amount, destination, tag, asset_key, decimals } = currentAsset;
-        const prefix = schemeMap[chain_id];
-        if (!prefix) {
-          this.$message({
-            message: 'This crypto does not support General Scheme',
-            type: 'error',
-          });
-          return;
-        }
-
-        if (prefix === 'bitcoin') {
-          return this.qrcodeValue = `bitcoin:${destination}?amount=${amount}`;
-        }
-
-        if (prefix === 'ethereum') {
-          if (asset_id === '43d61dcd-e413-450d-80b8-101d5e903357') {
-            this.qrcodeValue = `${prefix}:${destination}?amount=${amount}`;
-          } else {
-            this.qrcodeValue = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}&amount=${amount}`;
-          }
-          return;
-        }
-
-        this.qrcodeValue = `${prefix}:${destination}?amount=${
-          amount || 1
-        }&asset=${asset_id}&recipient=3539c3ce-52c0-4b0b-9573-c035ecb98d48&memo=${encodeURIComponent(tag)}`;
-        return;
+      let func = null;
+      switch (paymentMethod) {
+        case 'scheme':
+          func = callScheme;
+          break;
+        case 'metamask':
+          func = callMetaMask;
+          break;
+        case 'mixin':
+          func = callMixin;
+          break;
+        case 'tokenpocket':
+          func = callTokenPocket;
+          break;
+        default:
+          func = () => ({ error: 'Not Support', value: null });
       }
 
-      if (paymentMethod === 'metamask') {
-        const { asset_id, chain_id, asset_key, amount, destination, decimals } = currentAsset;
-        if (chain_id !== '43d61dcd-e413-450d-80b8-101d5e903357') {
-          this.$message({
-            message: 'This crypto does not support MetaMask',
-            type: 'error',
-          });
-          return;
-        }
-        if (asset_id === '43d61dcd-e413-450d-80b8-101d5e903357') {
-          this.qrcodeValue = `https://metamask.app.link/send/${destination}?value=${amount || 1}e18`;
-          return;
-        }
-        this.qrcodeValue = `https://metamask.app.link/send/${asset_key}/transfer?address=${destination}&uint256=${amount || 1}e${decimals || 18}`;
-        return;
+      const { error, value } = func(currentAsset);
+      if (error) {
+        return this.$message({
+          message: error,
+          type: 'warning',
+        });
       }
+      this.qrcodeValue = value;
     },
 
     openApp() {
