@@ -98,7 +98,8 @@
     "destination": "2iK6H4jGcSdKTyufmXiDj6gBtVSxMGvCHww1enK4PjN7",
     "tag": "",
     "asset_key": "11111111111111111111111111111111",
-    "amount": "0.01"
+    "amount": "0.01",
+    "decimals": 8
   },
   {
     "asset_id": "2204c1ee-0ea2-4add-bb9a-b3719cfff93a",
@@ -295,18 +296,6 @@
     "tag": "",
     "asset_key": "1002000",
     "amount": "1",
-    "decimals": 8
-  },
-  {
-    "asset_id": "64692c23-8971-4cf4-84a7-4dd1271dd887",
-    "chain_id": "64692c23-8971-4cf4-84a7-4dd1271dd887",
-    "symbol": "SOL",
-    "name": "Solana",
-    "icon_url": "https://mixin-images.zeromesh.net/eTzm8_cWke8NqJ3zbQcx7RkvbcTytD_NgBpdwIAgKJRpOoo0S0AQ3IQ-YeBJgUKmpsMPUHcZFzfuWowv3801cF5HXfya5MQ9fTA9HQ=s128",
-    "destination": "2iK6H4jGcSdKTyufmXiDj6gBtVSxMGvCHww1enK4PjN7",
-    "tag": "",
-    "asset_key": "11111111111111111111111111111111",
-    "amount": "0.01",
     "decimals": 8
   }
 ]

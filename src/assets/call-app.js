@@ -37,6 +37,7 @@ export const callScheme = asset => {
         value = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}&amount=${amount}`;
       }
     } else if (prefix === 'solana') {
+      console.log(amount);
       value = `${prefix}:${destination}?amount=${amount}`;
     } else {
       value = `${prefix}:${destination}?amount=${amount}&asset=${asset_id}&recipient=${RECIPIENT}&memo=${encodeURIComponent(tag)}`;
