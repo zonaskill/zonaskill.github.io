@@ -204,7 +204,7 @@
     "tag": "",
     "asset_key": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
     "amount": "1",
-    "decimals": 8
+    "decimals": 6
   },
   {
     "asset_id": "eea900a8-b327-488c-8d8d-1428702fe240",
@@ -250,7 +250,7 @@
     "tag": "",
     "asset_key": "25dabac5-056a-48ff-b9f9-f67395dc407c",
     "amount": "1",
-    "decimals": 8
+    "decimals": 6
   },
   {
     "asset_id": "6770a1e5-6086-44d5-b60f-545f9d9e8ffd",
@@ -296,6 +296,6 @@
     "tag": "",
     "asset_key": "1002000",
     "amount": "1",
-    "decimals": 8
+    "decimals": 6
   }
 ]
