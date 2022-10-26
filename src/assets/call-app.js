@@ -4,7 +4,7 @@ const EOS_UUID = '6cfe566e-4aad-470b-8c9a-2fd35b49c68d';
 const TRX_UUID = '25dabac5-056a-48ff-b9f9-f67395dc407c';
 const SCHEME_MAP = {
   'c6d0c728-2624-429b-8e0d-d9d19b6592fa': 'bitcoin', // https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
-  '43d61dcd-e413-450d-80b8-101d5e903357': 'ethereum',
+  '43d61dcd-e413-450d-80b8-101d5e903357': 'ethereum',   // https://eips.ethereum.org/EIPS/eip-681
   '17f78d7c-ed96-40ff-980c-5dc62fecbc85': 'binancecoin',
   'eea900a8-b327-488c-8d8d-1428702fe240': 'mobilecoin',
   '05c5ac01-31f9-4a69-aa8a-ab796de1d041': 'monero',
@@ -17,7 +17,7 @@ const SCHEME_MAP = {
   'a2c5d22b-62a2-4c13-b3f0-013290dbac60': 'horizen',
   '56e63c06-b506-4ec5-885a-4a5ac17b83c1': 'stellar',
   '6770a1e5-6086-44d5-b60f-545f9d9e8ffd': 'dogecoin',
-  '64692c23-8971-4cf4-84a7-4dd1271dd887': 'solana',
+  '64692c23-8971-4cf4-84a7-4dd1271dd887': 'solana', // https://docs.solanapay.com/spec
 };
 
 export const callScheme = asset => {
@@ -37,7 +37,6 @@ export const callScheme = asset => {
         value = `${prefix}:${asset_key}@1/transfer?address=${destination}&uint256=${amount}e${decimals}&amount=${amount}`;
       }
     } else if (prefix === 'solana') {
-      console.log(amount);
       value = `${prefix}:${destination}?amount=${amount}`;
     } else {
       value = `${prefix}:${destination}?amount=${amount}&asset=${asset_id}&recipient=${RECIPIENT}&memo=${encodeURIComponent(tag)}`;
@@ -49,6 +48,7 @@ export const callScheme = asset => {
 };
 
 export const callMetaMask = asset => {
+  // https://metamask.github.io/metamask-deeplinks/
   const { asset_id, chain_id, asset_key, amount, destination, decimals } = asset;
   let error = null;
   let value = null;
@@ -65,6 +65,7 @@ export const callMetaMask = asset => {
 };
 
 export const callMixin = asset => {
+  // https://developers.mixin.one/docs/schema
   const { amount, asset_id } = asset;
   return {
     error: null,

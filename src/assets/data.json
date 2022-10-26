@@ -154,7 +154,7 @@
     "icon_url": "https://mixin-images.zeromesh.net/OTwqLjEwc6v0JutJc-1sYkh_juFOvVbFz26WvvwfLGdKq6ZtwAT-wKhX0k-5PsgOK_Pd9rCQjZfwMJmiNXCBzpHnjapBtkCqAVCTCg=s128",
     "destination": "eoswithmixin",
     "tag": "a5a21611d5e6632c2e33f6314282f824",
-    "asset_key": "",
+    "asset_key": "eosio.token",
     "amount": "1",
     "decimals": 4
   },
