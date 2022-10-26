@@ -154,7 +154,7 @@
     "icon_url": "https://mixin-images.zeromesh.net/OTwqLjEwc6v0JutJc-1sYkh_juFOvVbFz26WvvwfLGdKq6ZtwAT-wKhX0k-5PsgOK_Pd9rCQjZfwMJmiNXCBzpHnjapBtkCqAVCTCg=s128",
     "destination": "eoswithmixin",
     "tag": "a5a21611d5e6632c2e33f6314282f824",
-    "asset_key": "eosio.token:EOS",
+    "asset_key": "",
     "amount": "1",
     "decimals": 4
   },
@@ -248,7 +248,7 @@
     "icon_url": "https://mixin-images.zeromesh.net/SXfRh0WJZpHrDAbBItuwwLp_TPML7hrbAPHGIz_EQRga0fFm5yGtNd55_W0ZZv9HRj_6W6kE4O4tq8W78mutAPE=s128",
     "destination": "TFCA2sQqc8pFXBtPznhR9UbpPNTBqENKk6",
     "tag": "",
-    "asset_key": "25dabac5-056a-48ff-b9f9-f67395dc407c",
+    "asset_key": "",
     "amount": "1",
     "decimals": 6
   },
