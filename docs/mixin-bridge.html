@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixin Bridge</title>
+</head>
+
+<body>
+  <p id="msg"></p>
+  <script>
+    var msgEl = document.getElementById('msg');
+    var ctx = {};
+    if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.MixinContext) {
+      ctx = JSON.parse(prompt('MixinContext.getContext()'))
+      ctx.platform = ctx.platform || 'iOS'
+    } else if (window.MixinContext && (typeof window.MixinContext.getContext === 'function')) {
+      ctx = JSON.parse(window.MixinContext.getContext())
+      ctx.platform = ctx.platform || 'Android'
+    }
+    msgEl.innerText = JSON.stringify(ctx);
+  </script>
+</body>
+
+</html>
