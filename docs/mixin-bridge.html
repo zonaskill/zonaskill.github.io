@@ -9,10 +9,11 @@
 </head>
 
 <body>
-  <p id="msg"></p>
+  <div id="msg"></div>
   <script>
     var msgEl = document.getElementById('msg');
     var ctx = {};
+    var htmlStr = '';
     if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.MixinContext) {
       ctx = JSON.parse(prompt('MixinContext.getContext()'))
       ctx.platform = ctx.platform || 'iOS'
@@ -20,7 +21,12 @@
       ctx = JSON.parse(window.MixinContext.getContext())
       ctx.platform = ctx.platform || 'Android'
     }
-    msgEl.innerText = JSON.stringify(ctx);
+
+    for (var key in ctx) {
+      htmlStr += key + ':' + ctx[key] + '<br/>';
+    }
+
+    msgEl.innerHTML = htmlStr;
   </script>
 </body>
 
