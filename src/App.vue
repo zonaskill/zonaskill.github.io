@@ -70,7 +70,7 @@
 import assets from './assets/data.json';
 import { getParser } from 'bowser';
 import copy from './assets/copy-text';
-import { callScheme, callMetaMask, callMixin, callTokenPocket } from './assets/call-app';
+import { callScheme, callMetaMask, callMixin, callTokenPocket, callBitKeep } from './assets/call-app';
 
 export default {
   name: 'App',
@@ -100,6 +100,11 @@ export default {
           icon: 'https://mixin.one/assets/icons/favicon.ico',
           name: 'Mixin Messenger',
           value: 'mixin',
+        },
+        {
+          icon: 'https://docs.bitkeep.com/bitkeep-icon.svg',
+          name: 'BitKeep',
+          value: 'bitkeep',
         },
       ],
       paymentMethod: 'scheme',
@@ -161,6 +166,9 @@ export default {
           break;
         case 'tokenpocket':
           func = callTokenPocket;
+          break;
+        case 'bitkeep':
+          func = callBitKeep;
           break;
         default:
           func = () => ({ error: 'Not Support', value: null });
