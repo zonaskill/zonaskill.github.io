@@ -10,7 +10,7 @@
               <div class="dropdown-toggler-container" v-if="!currentAsset">Select</div>
               <div class="dropdown-toggler-container" v-else>
                 <img :src="currentAsset.icon_url" :alt="currentAsset.symbol" />
-                <span>{{ currentAsset.amount }} {{ currentAsset.symbol }}</span>
+                <span>{{ currentAsset.amount }} {{ currentAsset.display_symbol }}</span>
               </div>
               <i class="el-icon-arrow-down el-icon--right"></i>
             </div>
@@ -19,7 +19,7 @@
               <div class="dropdown-menu-container">
                 <div class="dropdown-item" v-for="item in assets" :key="item.asset_id" @click="onAssetChoose(item)">
                   <img :src="item.icon_url" :alt="item.symbol" />
-                  <span>{{ item.amount }} {{ item.symbol }}</span>
+                  <span>{{ item.amount }} {{ item.display_symbol }}</span>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
 import assets from './assets/data.json';
 import { getParser } from 'bowser';
 import copy from './assets/copy-text';
-import { callScheme, callMetaMask, callMixin, callTokenPocket, callBitKeep } from './assets/call-app';
+import { callScheme, callMetaMask, callMixin, callTokenPocket, callBitKeep, callNativeBitKeep } from './assets/call-app';
 
 export default {
   name: 'App',
@@ -196,6 +196,10 @@ export default {
         });
       }
     },
+
+    onTest() {
+      callNativeBitKeep(this.currentAsset);
+    },
   },
 };
 </script>
@@ -206,6 +210,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
