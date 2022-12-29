@@ -33,6 +33,20 @@ const BIT_KEEP_CHAIN_MAP = {
   '882eb041-64ea-465f-a4da-817bd3020f52': 'ar',
 };
 
+const TRUST_CHAIN_MAP = {
+  //https://github.com/satoshilabs/slips/blob/master/slip-0044.md
+  'c6d0c728-2624-429b-8e0d-d9d19b6592fa': '0', // BTC
+  '43d61dcd-e413-450d-80b8-101d5e903357': '60', // ETH
+  '25dabac5-056a-48ff-b9f9-f67395dc407c': '195', // TRX
+  '6770a1e5-6086-44d5-b60f-545f9d9e8ffd': '3', // DOGE
+  '6cfe566e-4aad-470b-8c9a-2fd35b49c68d': '194', // EOS
+  '64692c23-8971-4cf4-84a7-4dd1271dd887': '501', // SOL
+  '54c61a72-b982-4034-a556-0d99e3c21e39': '354', // DOT
+  'd243386e-6d84-42e6-be03-175be17bf275': '309', // CKB
+  '1949e683-6a08-49e2-b087-d6b72398588f': '9006', // BSC
+  'b7938396-3f94-4e0a-9179-d3440718156f': '966', // Polygon MATIC
+};
+
 export const callScheme = asset => {
   const { asset_id, chain_id, amount, destination, tag, asset_key, decimals } = asset;
   const prefix = SCHEME_MAP[chain_id];
@@ -173,24 +187,23 @@ export const callBitKeep = asset => {
   }
 };
 
-export const callNativeBitKeep = asset => {
-  // const { asset_id, chain_id, asset_key, amount, destination } = asset;
-  const BitKeepInvoke = window.BitKeepInvoke;
-  BitKeepInvoke.alert('hello' + asset.symbol, function () {
-    console.log(arguments);
-  });
-
-  BitKeepInvoke.pay(
-    'eth',
-    {
-      coin: 'eth',
-      to: '0x354155B1F573250401CE6e493B4C52fC163512dA',
-      // contract: '0xdac17f958d2ee523a2206206994597c13d831ec7',
-      amount: '1',
-      // gas: '400000',
-    },
-    function () {
-      console.log(arguments);
-    },
-  );
+export const callTrustWallet = asset => {
+  // https://developer.trustwallet.com/deeplinking
+  const { asset_id, chain_id, asset_key, amount, destination, tag } = asset;
+  if (!TRUST_CHAIN_MAP[chain_id]) {
+    return {
+      error: 'This crypto does not support trust wallet',
+      value: null,
+    };
+  }
+  let url = `https://link.trustwallet.com/send?address=${destination}&amount=${amount}&memo=${tag}`;
+  if (asset_id === chain_id) {
+    url += `&asset=c${TRUST_CHAIN_MAP[chain_id]}`;
+  } else {
+    url += `&asset=c${TRUST_CHAIN_MAP[chain_id]}_t${asset_key}`;
+  }
+  return {
+    error: null,
+    value: url,
+  };
 };

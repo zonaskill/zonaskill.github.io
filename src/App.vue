@@ -70,7 +70,7 @@
 import assets from './assets/data.json';
 import { getParser } from 'bowser';
 import copy from './assets/copy-text';
-import { callScheme, callMetaMask, callMixin, callTokenPocket, callBitKeep, callNativeBitKeep } from './assets/call-app';
+import { callScheme, callMetaMask, callMixin, callTokenPocket, callBitKeep, callTrustWallet } from './assets/call-app';
 
 export default {
   name: 'App',
@@ -105,6 +105,11 @@ export default {
           icon: 'https://docs.bitkeep.com/bitkeep-icon.svg',
           name: 'BitKeep',
           value: 'bitkeep',
+        },
+        {
+          icon: 'https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F2744446184-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-LeGDgApX5LA1FGVGo-z%252Favatar.png%3Fgeneration%3D1557214716602218%26alt%3Dmedia',
+          name: 'Trust Wallet',
+          value: 'trust',
         },
       ],
       paymentMethod: 'scheme',
@@ -170,6 +175,9 @@ export default {
         case 'bitkeep':
           func = callBitKeep;
           break;
+        case 'trust':
+          func = callTrustWallet;
+          break;
         default:
           func = () => ({ error: 'Not Support', value: null });
       }
@@ -195,10 +203,6 @@ export default {
           type: 'success',
         });
       }
-    },
-
-    onTest() {
-      callNativeBitKeep(this.currentAsset);
     },
   },
 };
