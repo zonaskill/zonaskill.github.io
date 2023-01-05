@@ -207,3 +207,18 @@ export const callTrustWallet = asset => {
     value: url,
   };
 };
+
+export const callTonKepper = asset => {
+  const { asset_id, amount, destination } = asset;
+  if (asset_id !== 'ef660437-d915-4e27-ad3f-632bfb6ba0ee') {
+    return {
+      error: 'This crypto does not support Tonkeeper',
+      value: null,
+    };
+  }
+  let url = `https://app.tonkeeper.com/transfer/${destination}?amount=${amount}`;
+  return {
+    error: null,
+    value: url,
+  };
+};

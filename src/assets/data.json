@@ -323,5 +323,18 @@
     "asset_key": "1002000",
     "amount": "1",
     "decimals": 6
+  },
+  {
+    "asset_id": "ef660437-d915-4e27-ad3f-632bfb6ba0ee",
+    "chain_id": "ef660437-d915-4e27-ad3f-632bfb6ba0ee",
+    "symbol": "TON",
+    "display_symbol": "TON",
+    "name": "Toncoin",
+    "icon_url": "https://d1vo6gxh6hbvvc.cloudfront.net/fiats/ef660437-d915-4e27-ad3f-632bfb6ba0ee.png",
+    "destination": "EQCvmqdgAFmphe3F2bW-iEtOGBDS_9paH_3NcUOM0eu6uPIN",
+    "tag": "",
+    "asset_key": "",
+    "amount": "1",
+    "decimals": 18
   }
 ]
