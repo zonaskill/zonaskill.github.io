@@ -216,7 +216,7 @@ export const callTonKepper = asset => {
       value: null,
     };
   }
-  let url = `https://app.tonkeeper.com/transfer/${destination}?amount=${amount}`;
+  let url = `https://app.tonkeeper.com/transfer/${destination}?amount=${amount * 1000000000}`;
   return {
     error: null,
     value: url,
